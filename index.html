@@ -31,12 +31,99 @@
 
   <title>A Living Lab</title>
 </head>
-<body class="container mx-auto font-sora">
+<body class="container max-w-screen-xl lg:mt-8 mx-auto font-sora">
 
-  <!-- Header Section -->
+  <!-- Header Section Start -->
 <header>
+  <nav>
+    <!-- Navbar For large Screen -->
 
-</header>
+   <div class="invisible md:visible flex justify-between items-center ">
+ <!-- logo+title -->
+    <div class="ml-28">
+      <img src="assets/logo-header.png" width="154px">
+    </div>
+  
+  <!-- Anchors -->
+   <div class="flex gap-10 ">
+    <a class="hover:text-blue-700" href="#">Product</a>
+    <a class="hover:text-blue-700" href="#">Service</a>
+    <a class="hover:text-blue-700" href="#">Contact Us</a>
+   </div>
+
+   <!-- icon+Buttons -->
+    <div class="flex items-center gap-5 ">
+      <Div class="flex gap-5 ">
+        <!-- find icon -->
+        <i class="fa-solid fa-magnifying-glass text-black hover:text-blue-500 pl-5"></i>
+        <!-- shopping icon -->
+        <i class="fa-solid fa-cart-shopping text-black hover:text-blue-500 "></i>
+      </Div>
+      <!-- Nav Buttons -->
+      <div >
+        <button class="btn btn-outline border-2 border-green-600 text-black hover:bg-blue-500 mx-4">Login</button>
+        <button class="btn btn-outline bg-green-600 border text-white hover:bg-blue-500 mr-28">Register</button>
+      </div>
+    </div>
+   </div>
+
+    <!-- Navbar For small Screen -->
+    <div class="navbar bg-base-100 pt-4 px-6 ">
+      
+      <div class="flex-1 md:invisible">
+        <img class="" src="assets/leaves.png" width="40px">
+      </div>
+      <div class="flex-none">
+        <button class="btn btn-square btn-ghost text-green-700 md:invisible">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 24 24"
+            class="inline-block h-7 w-8 stroke-current">
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              d="M4 6h16M4 12h16M4 18h16"></path>
+          </svg>
+        </button>
+      </div>
+    </div>
+  </nav>
+  <hr class="w-full border-solid border border-green-600 md:invisible ">
+   <!----Navbar section Done -->
+
+
+    <!-- Banner Section -->
+<section>
+    
+    <div class="flex flex-col justify-center items-center pt-8 mb-20 bg-gradient-to-b from-[#FFFFFF] to-[#EFEBE3]" >
+      <!-- title text -->
+      <div class="flex flex-col justify-center items-center">
+      <h1 class="text-3xl p-2 text-center lg:text-5xl font-semibold lg:pb-7 ">Freshness <span class="text-green-600">You Can</span> <br> <span class="text-green-600">Count</span> On, Prices You’ll Love!</h1>
+      <!-- Sub-title text -->
+      <p class="text-base p-2 pb-6 font-normal text-stone-600 text-center lg:text-lg  lg:pb-7">Shop your daily essentials at unbeatable prices. From fresh produce to pantry <br> staples, we’ve got you covered every day!</p> 
+    </div>
+
+    <!-- Banner image -->
+      <div>
+        <img class="" src="assets/hero-vegetables.png" alt="coming soon">
+      </div>
+
+
+    </div>
+
+
+
+
+
+
+</section>
+
+
+   
+ </header> 
+
 
 
 
