@@ -47,61 +47,45 @@
   <!-- Header Section Start -->
 <header>
   <nav>
-    <!-- Navbar For large Screen -->
-
-   <div class="invisible md:visible flex justify-between items-center ">
- <!-- logo+title -->
-    <div class="ml-28">
-      <img src="assets/logo-header.png" width="154px">
-    </div>
-  
-  <!-- Anchors -->
-   <div class="flex gap-10 ">
-    <a class="font-normal text-gray-950 hover:text-blue-700" href="#">Product</a>
-    <a class="font-normal text-gray-950 hover:text-blue-700" href="#">Service</a>
-    <a class="font-normal text-gray-950 hover:text-blue-700" href="#">Contact Us</a>
-   </div>
-
-   <!-- icon+Buttons -->
-    <div class="flex items-center gap-7 ">
-      <Div class="flex gap-6 ">
-        <!-- find icon -->
-        <i class="fa-solid fa-magnifying-glass text-black hover:text-blue-500 pl-5 "></i>
-        <!-- shopping icon -->
-        <i class="fa-solid fa-cart-shopping text-black hover:text-blue-500 "></i>
-      </Div>
-      <!-- Nav Buttons -->
-      <div >
-        <button class="btn btn-outline border-2 border-green-600 text-black hover:bg-blue-500 mx-4">Login</button>
-        <button class="btn btn-outline bg-green-600 border text-white hover:bg-blue-500 mr-28">Register</button>
-      </div>
-    </div>
-   </div>
-
-    <!-- Navbar For small Screen -->
-    <div class="navbar bg-base-100 px-6 ">
+    <div class="flex justify-between items-center mx-8 md:mx-24 my-5">  <!-- Parent div -->
       
-      <div class="flex-1 md:invisible">
-        <img class="" src="assets/leaves.png" width="40px">
+      <!-- icon+logo part -->
+      <div>
+        <img class="hidden md:block" src="assets/logo-header.png" alt="#">
+        <img class="md:hidden" src="assets/leaves.png" width="50px" alt="#">
       </div>
-      <div class="flex-none">
-        <button class="btn btn-square btn-ghost text-green-700 md:invisible">
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            fill="none"
-            viewBox="0 0 24 24"
-            class="inline-block h-7 w-8 stroke-current">
-            <path
-              stroke-linecap="round"
-              stroke-linejoin="round"
-              stroke-width="2"
-              d="M4 6h16M4 12h16M4 18h16"></path>
+
+      <!-- Anchors -->
+      <div class="space-x-8 justify-center items-center hidden md:block">
+        <a class="font-normal text-base hover:text-blue-500" href="#">Products</a>
+        <a class="font-normal text-base hover:text-blue-500" href="#">Services</a>
+        <a class="font-normal text-base hover:text-blue-500" href="#">Contact Us</a> 
+      </div>
+
+      <!-- hamburger section -->
+      <div class=" flex items-center space-x-4">
+        <div> <!-- Icons -->
+          <i class="fa-solid fa-magnifying-glass hidden md:block text-black hover:text-blue-500 "></i>
+          </div>
+          <div>
+          <i class="fa-solid fa-cart-shopping hidden md:block text-black hover:text-blue-500"></i>
+          </div>
+          <div>
+          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-8 md:hidden">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
           </svg>
-        </button>
+        </div>
+        
+          <div class="flex space-x-3">  <!-- buttons -->
+           
+            <button class="hidden md:block btn py-1 px-8 border-2 bg-white border-green-500 hover:bg-blue-500">Login</button>
+            <button class="hidden md:block btn py-2 px-10 text-white border-2 bg-[#179800] hover:bg-blue-500">Register</button>
+          </div>
       </div>
     </div>
+    <!-- Horizontal Line -->
+    <hr class="md:hidden w-full border border-green-400">
   </nav>
-  <hr class="w-full border-solid border border-green-600 md:invisible ">
    <!----Navbar section Done -->
 
 
