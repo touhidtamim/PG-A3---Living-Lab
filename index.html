@@ -26,6 +26,17 @@
   .font-sora{
     font-family: "Sora", serif;
   }
+
+  @keyframes wavy {
+    0%, 100% { transform: translateY(0); }
+    25% { transform: translateY(-5px); }
+    50% { transform: translateY(5px); }
+    75% { transform: translateY(-5px); }
+  }
+  .animate-wavy {
+    animation: wavy 2s ease-in-out infinite;
+  }
+
 </style>
 
 
@@ -100,9 +111,9 @@
     <div class="flex flex-col justify-center items-center pt-8 mb-20 bg-gradient-to-b from-[#FFFFFF] to-[#EFEBE3]" >
       <!-- title text -->
       <div class="flex flex-col justify-center items-center">
-      <h1 class="text-3xl p-2 text-center lg:text-5xl font-semibold lg:pb-7">Freshness <span class="text-green-600">You Can</span> <br> <span class="text-green-600">Count</span> On, Prices You’ll Love!</h1>
+      <h1 class="text-3xl p-2 text-center lg:text-5xl font-semibold lg:pb-7 animate-wavy">Freshness <span class="text-green-600">You Can</span> <br> <span class="text-green-600">Count</span> On, Prices You’ll Love!</h1>
       <!-- Sub-title text -->
-      <p class="text-base p-2 pb-6 font-normal text-stone-600 text-center lg:text-lg  lg:pb-7">Shop your daily essentials at unbeatable prices. From fresh produce to pantry <br> staples, we’ve got you covered every day!</p> 
+      <p class="text-base p-2 pb-6 font-normal text-stone-600 text-center lg:text-lg  lg:pb-7 ">Shop your daily essentials at unbeatable prices. From fresh produce to pantry <br> staples, we’ve got you covered every day!</p> 
     </div>
 
     <!-- Banner image -->
@@ -307,7 +318,6 @@
 
 
 
-
           <!--mini card-6 -->
 
           <div class="flex justify-center rounded-lg  bg-white p-2 pt-3"> <!-- parent -->
@@ -327,10 +337,6 @@
                 <p class="font-medium text-base ">৳ 70</p>
               </div>
           </div>
-
-
-
-
 
           <!--mini card-7 -->
 
@@ -352,9 +358,6 @@
               </div>
           </div>
 
-
-
-
           <!--mini card-8 -->
 
           <div class=" flex justify-center rounded-lg  bg-white p-2 pt-3"> <!-- parent -->
@@ -374,12 +377,6 @@
                 <p class="font-medium text-base ">৳ 40</p>
               </div>
           </div>
-
-
-
-
-
-
 
           <!--mini card-9 -->
 
@@ -447,7 +444,7 @@
 </section> <!-- Arrival card section done -->
 
 
-<!-- FAQ Section -->
+<!-- FAQ Section (challange part) -->
  <Section class="bg-gradient-to-t from-[#a9e29f] to-[#d6e6d3] rounded-xl">
    <div class=" mx-2 py-14 lg:mt-28 lg:mx-28 lg:pt-14">
     <h1 class="text-2xl p-2 pb-16 text-left text-green-600 lg:text-4xl font-semibold">
@@ -496,15 +493,7 @@
     <p class=" font-normal text-base lg:text-xl"> Don’t Worry, We’re Here for You! Reach Out Anytime for Healthier Choices.</p>
   </div>
 </div>
-   
-
-
-
-
-
  </Section>
-
-
 
 
 
@@ -534,7 +523,7 @@
 </main>
 
     
-                    <!-- Footer Section -->
+            <!-- Footer Section -->
 
     <!-- Copied from DaisyUI -->
 <footer class="footer bg-[#179800] text-base-content text-white pt-96 p-10">
@@ -590,8 +579,6 @@
           </div>
         </nav>
 </footer>
-
-
 
 </body>
 </html>
